@@ -1,0 +1,19 @@
+/* css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    font-family: 'Satoshi', sans-serif;
+}
+
+/* navbar */
+#navbar {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+}
