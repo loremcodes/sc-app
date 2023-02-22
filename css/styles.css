@@ -2,12 +2,21 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Satoshi', sans-serif;
     box-sizing: border-box;
 }
 
 /* default style */
 
 /* hover effect */
+.heading {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+}
+
 .hover {
     display: inline-block;
     position: relative;
@@ -156,8 +165,7 @@ a {
 /* Position the image container (needed to position the left and right arrows) */
 .slides-container {
     position: relative;
-    width: 80%;
-    margin: auto;
+    width: 100%;
 }
 
 /* Hide the images by default */
@@ -243,6 +251,62 @@ a {
     opacity: 1;
 }
 
+/* faq tab */
+.faq-section {
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: auto;
+}
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    margin: 5px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+/* contact section */
+.contact-section {
+    width: 80%;
+    margin: auto;
+}
+
 /* Responsive design */
 
 /* Media queries for mobile */
@@ -252,9 +316,6 @@ a {
     }
 
 
-    .slides-container {
-        width: 100%;
-    }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
@@ -279,10 +340,7 @@ a {
         display: none;
     }
 
-    .slides-container {
-        width: 90%;
-        margin: auto;
-    }
+
 }
 
 /* Media query for large screens */
@@ -292,8 +350,4 @@ a {
         display: none;
     }
 
-    .slides-container {
-        width: 90%;
-        margin: auto;
-    }
 }

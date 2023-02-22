@@ -1,5 +1,4 @@
-// sidebar
-
+// mobile header start
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
 }
@@ -7,29 +6,28 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+// mobile header ends
 
-// Images Tab
+// sidebar start
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  let i;
+
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("demo");
   let captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
@@ -39,3 +37,20 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+// sidebar ends
+
+// Accordion
+let acc = document.getElementsByClassName("accordion");
+
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+// Accordion
