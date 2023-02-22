@@ -387,9 +387,9 @@ textarea {
     resize: vertical;
     outline: none;
     border: none;
+    background: #fff;
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
     background-color: #418aff;
     color: #fff;
@@ -398,7 +398,7 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 /* Responsive design */
@@ -414,9 +414,15 @@ input[type=submit] {
         flex-direction: column;
         width: 100%;
     }
-    
-    .contat-left, .contact-right {
+
+    .contact-left,
+    .contact-right {
         width: 100%;
+    }
+
+    .contact-left-inner-element {
+        /* border: 2px solid red; */
+        margin: 20px 0px;
     }
 }
 
