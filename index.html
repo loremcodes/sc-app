@@ -53,9 +53,18 @@
 
     <!-- mobile header -->
     <div class="mobile-header" id="mobile-header">
-        <a class="mobile-header-menu-btn">
+        <a class="mobile-header-menu-btn" onclick="openNav()">
             <i class="las la-bars"></i>
         </a>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
         <a href="" class="mobile-header-logo link">Sanjay Choudary</a>
     </div>
 
