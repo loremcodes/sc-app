@@ -154,7 +154,7 @@ a {
 
 /* Images Tab */
 /* Position the image container (needed to position the left and right arrows) */
-.container {
+.slides-container {
     position: relative;
     width: 80%;
     margin: auto;
@@ -251,7 +251,11 @@ a {
         display: none;
     }
 
-    #mobile-header {}
+
+    .slides-container {
+        width: 95%;
+        margin: auto;
+    }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
@@ -260,7 +264,6 @@ a {
         display: none;
     }
 
-    #mobile-header {}
 }
 
 /* Media queries for Tablet ipads portrait mode */
@@ -268,24 +271,30 @@ a {
     #header {
         display: none;
     }
-
-    #mobile-header {}
 }
 
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
-    #header {}
 
     #mobile-header {
         display: none;
+    }
+
+    .slides-container {
+        width: 90%;
+        margin: auto;
     }
 }
 
 /* Media query for large screens */
 @media (min-width: 1281px) {
-    #header {}
 
     #mobile-header {
         display: none;
+    }
+
+    .slides-container {
+        width: 90%;
+        margin: auto;
     }
 }
