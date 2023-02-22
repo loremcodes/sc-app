@@ -1,19 +1,138 @@
-/* css reset */
+/* Root style */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* body */
-body {
-    font-family: 'Satoshi', sans-serif;
+/* default style */
+ol,
+ul {
+    list-style-type: none;
 }
 
-/* navbar */
-#navbar {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* mobile header */
+.mobile-header {
+    background: white;
+    box-shadow: rgb(0 0 0 / 8%) 0 1px;
+    height: 60px;
+    width: 100%;
+    z-index: 7;
+    display: block;
+    position: fixed;
+    top: 0;
+}
+
+.mobile-header-menu-btn {
+    display: block;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 6px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-header-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -65px;
+    top: 20px;
+    width: 130px;
+    display: flex;
+}
+
+/* Desktop header */
+#header {
+    /* border: 2px solid red; */
+    background: white;
+    box-shadow: rgb(0 0 0 / 8%) 0 1px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-logo {
+    max-width: 20vw;
+    margin: 20px;
     font-family: 'Satoshi', sans-serif;
     font-weight: 400;
-    letter-spacing: 0.7px;
+}
+
+#header-nav {
+    /* border: 2px solid green; */
+    min-width: 30vw;
+}
+
+#header-nav>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.link {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+}
+
+.icon {
+    display: inline-block;
+}
+
+
+/* Responsive design */
+
+/* Media queries for mobile */
+@media (max-width: 480px) {
+    #header {
+        display: none;
+    }
+
+    #mobile-header {}
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    #header {
+        display: none;
+    }
+
+    #mobile-header {}
+}
+
+/* Media queries for Tablet ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #header {
+        display: none;
+    }
+
+    #mobile-header {}
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    #header {}
+
+    #mobile-header {
+        display: none;
+    }
+}
+
+/* Media query for large screens */
+@media (min-width: 1281px) {
+    #header {}
+
+    #mobile-header {
+        display: none;
+    }
 }
