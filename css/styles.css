@@ -6,6 +6,31 @@
 }
 
 /* default style */
+
+/* hover effect */
+.hover {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 ol,
 ul {
     list-style-type: none;
@@ -73,14 +98,6 @@ a {
     transition: 0.3s;
     font-family: 'Satoshi', sans-serif;
     font-weight: 400;
-}
-
-.sidenav a:hover {
-    color: #000;
-    background: #fff;
-    margin: 10px;
-    border-radius: 5px;
-    /* color: red; */
 }
 
 .sidenav .closebtn {
