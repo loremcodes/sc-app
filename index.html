@@ -5,51 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Site title -->
+    <!---------- Site title --------->
     <title>Sanjay Choudary</title>
 
-    <!-- External css -->
+    <!---------- External css ---------->
     <link rel="stylesheet" href="./css/styles.css">
 
-    <!-- Line awesome icons cdn -->
+    <!---------- Line awesome icons cdn ---------->
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
-    <!-- inter font link -->
+    <!---------- inter font link ---------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+    <!---------- Favicon ---------->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Images/faviconio-logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Images/faviconio-logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Images/faviconio-logo/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
 </head>
 
 <body>
 
-    <!-- Desktop and tablet header -->
+    <!---------- hero images and header ---------->
     <div class="hero-image">
-        <!-- Desktop and tablet header -->
+        <!---------- Desktop and tablet header ---------->
         <div id="header">
             <a href="" class="hover active-link link" id="header-logo">Sanjay Choudary</a>
 
             <nav class="nav" id="header-nav">
                 <ul>
                     <li>
-                        <a href="#" class="link hover">Images
+                        <a href="#images-tab" class="link hover">Images
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="link hover">Contact
+                        <a href="#contact-tab" class="link hover">Contact
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="link hover">FAQ
+                        <a href="#faq-tab" class="link hover">FAQ
                         </a>
                     </li>
                 </ul>
             </nav>
         </div>
 
-        <!-- mobile header -->
+        <!---------- mobile header ---------->
         <div class="mobile-header" id="mobile-header">
             <a class="mobile-header-menu-btn" onclick="openNav()">
                 <i class="las la-bars"></i>
@@ -62,36 +68,58 @@
                         <a href="#" class="hover">About</a>
                     </li>
                     <li>
-                        <a href="#" class="hover">Services</a>
+                        <a href="#images-tab" class="hover">Images</a>
                     </li>
                     <li>
-                        <a href="#" class="hover">Clients</a>
+                        <a href="#faq-tab" class="hover">FAQ</a>
                     </li>
                     <li>
-                        <a href="#" class="hover">Contact</a>
+                        <a href="#contact-tab" class="hover">Contact</a>
                     </li>
                 </ul>
             </div>
             <a href="" class="mobile-header-logo link">Sanjay Choudary</a>
         </div>
 
-        <!-- Hero Image -->
+        <!---------- Hero Image ---------->
         <div class="hero-text">
             <h1 class="hero-heading">I am Sanjay Choudary</h1>
             <p class="hero-discription">And I'm a Photographer</p>
-            <button class="hero-hire-button">Hire me</button>
+            <button onclick="location.href='#contact-tab'" class="hero-hire-button">Hire me</button>
         </div>
     </div>
 
-    <!-- Quote Tab -->
+    <!---------- Quote Tab ---------->
     <div class="quote-container">
         <q>There’s nothing more interesting than the landscape of the human face</q>
         <!-- <br> -->
         <p> -Irvin Kershner </p>
     </div>
 
-    <!-- Images tab -->
-    <div class="slides-container">
+    <!---------- Images grid tab ---------->
+    <div class="images-grid-container">
+        <!-- Trigger the Modal -->
+        <div class="images-grid">
+            <img id="myImg" src="./Images/images-grid/img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">
+            <img id="myImg" src="./Images/images-grid/img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">
+            <img id="myImg" src="./Images/images-grid/img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+    </div>
+
+    <!---------- Images tab ---------->
+    <div class="slides-container" id="images-tab">
         <!-- Full-width images with number text -->
         <div class="mySlides">
             <div class="numbertext">1 / 6</div>
@@ -161,9 +189,9 @@
         </div>
     </div>
 
-    <!-- Faq tab -->
+    <!---------- Faq tab ---------->
     <!-- heading for faq section -->
-    <div class="faq-section">
+    <div class="faq-section" id="faq-tab">
         <h2 class="heading">FAQ <i class="lar la-question-circle"></i> </h3>
             <button class="accordion">Question 1</button>
             <div class="panel">
@@ -195,8 +223,8 @@
 
 
 
-    <!-- Contact Tab -->
-    <div class="contact-section">
+    <!---------- Contact Tab ---------->
+    <div class="contact-section" id="contact-tab">
 
         <div class="contact-left">
 
@@ -243,13 +271,13 @@
         </div>
     </div>
 
-    <!-- Footer Tab -->
+    <!---------- Footer Tab ---------->
     <div class="footer-container">
         <!-- <p class="footer-text"><i class="lar la-copyright"></i> Sanjay Choudhary Photography & wedding Film</p> -->
         <p class="footer-text">Developed by Prasad Junghare </p>
     </div>
 
-    <!-- External Javascript -->
+    <!---------- External Javascript ---------->
     <script src="./Javascript/app.js"></script>
 </body>
 
