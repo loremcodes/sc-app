@@ -81,6 +81,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
+
 }
 
 .mobile-header-logo {
@@ -671,12 +673,20 @@ input[type=submit] {
         display: none;
     }
 
+    .myImg {
+        margin: 0px 10px;
+    }
+
 }
 
 /********** Media queries for Tablet ipads portrait mode **********/
 @media (min-width: 768px) and (max-width: 1024px) {
     #header {
         display: none;
+    }
+    
+    .myImg {
+        margin: 0px 10px;
     }
 }
 
@@ -687,6 +697,9 @@ input[type=submit] {
         display: none;
     }
 
+    .myImg {
+        margin: 0px 10px;
+    }
 
 }
 
