@@ -18,8 +18,8 @@ body {
 
 /********** hover effect **********/
 .heading {
-    font-family: 'Satoshi', sans-serif;
-    font-weight: 400;
+    font-family: inherit;
+    font-weight:500;
     font-size: 30px;
     margin: 20px;
     text-align: center;
@@ -139,7 +139,7 @@ a {
 
 
     /* Set a specific height */
-    height: 100%;
+    height: 90%;
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -215,7 +215,7 @@ a {
 /********** quote tab **********/
 .quote-container {
     /* border: 2px solid red; */
-    height: 150px;
+    height: 10%;
     width: 100%;
     text-align: center;
     background-color: #fff;
@@ -448,12 +448,10 @@ a {
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    margin: 5px;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
-    border-radius: 8px;
     font-size: 18px;
 }
 
@@ -621,6 +619,11 @@ input[type=submit] {
         margin: 10px 0px;
     }
 
+    .faq-section {
+
+        width: 100vw;
+    }
+
     .contact-section {
         display: flex;
         flex-direction: column;
@@ -679,7 +682,7 @@ input[type=submit] {
     #header {
         display: none;
     }
-    
+
     .myImg {
         margin: 0px 10px;
     }
