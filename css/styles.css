@@ -232,25 +232,25 @@ a {
 
 /********** Images grid tab **********/
 .images-grid-container {
-    margin: 20px;
+    margin: 20px 0px;
+    width: 100vw;
 }
 
 .images-grid {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
-    margin: auto;
 }
 
 /* Style the Image Used to Trigger the Modal */
-#myImg {
+.myImg {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#myImg:hover {
+.myImg:hover {
     opacity: 0.7;
 }
 
@@ -613,6 +613,15 @@ input[type=submit] {
 
     .quote-container>p {
         font-size: 14px;
+    }
+
+    .images-grid {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .images-grid>img {
+        margin: 10px 0px;
     }
 
     .contact-section {
