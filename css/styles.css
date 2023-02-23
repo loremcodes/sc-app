@@ -132,6 +132,8 @@ a {
     /* border: 2px solid green; */
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../HeroImg.jpg");
+    object-fit: cover;
+
 
     /* Set a specific height */
     height: 100%;
@@ -151,13 +153,13 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    width: 80%;
+    /* width: 80%; */
 }
 
 .hero-heading,
-.hero-discription {
+.hero-discription, .hero-hire-button {
     /* border: 2px solid red; */
-    margin: 20px 0px;
+    margin-bottom: 10px;
 }
 
 .hero-hire-button {
@@ -166,7 +168,6 @@ a {
     outline: none;
     border-radius: 4px;
     padding: 10px 15px;
-    font-weight: bold;
     font-family: inherit;
     color: #fff;
     cursor: pointer;
@@ -224,6 +225,7 @@ a {
     font-family: inherit;
     font-weight: 400;
     font-size: 20px;
+    font-style: italic;
     margin: 10px 0px;
 }
 
@@ -478,8 +480,11 @@ input[type=submit] {
         display: none;
     }
 
+    .hero-image {
+    }
+
     .hero-text {
-        
+        width: 100%;
     }
 
     .quote-container{
